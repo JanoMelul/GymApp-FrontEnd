@@ -8,7 +8,7 @@ const Protected = ({ children }) => {
   if (!user) {
     return <Navigate to="/login" replace />;
   } else {
-    return children;
+    return <div style={{ minHeight: "87vh" }}>{children}</div>;
   }
 };
 

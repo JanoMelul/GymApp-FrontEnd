@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 
-const UserModal = ({ children }) => {
+const UserModal = ({ children, close }) => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
@@ -143,7 +143,14 @@ const UserModal = ({ children }) => {
   };
 
   return (
-    <div className="bg-white p-8 rounded shadow-md w-1/2">
+    <div className="bg-white p-8 rounded shadow-md w-1/2 relative">
+      <i
+        onClick={() => close()}
+        className=" material-icons cursor-pointer absolute top-0 right-0 p-4"
+      >
+        X
+      </i>
+
       <h2 className="text-2xl font-semibold mb-6">Registrarse</h2>
       <form>
         <div className="grid grid-cols-2 gap-4">
