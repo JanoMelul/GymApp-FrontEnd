@@ -19,12 +19,12 @@ const Header = () => {
               Profesores
             </li>
           </Link>
-          <Link to="/home">
+          <Link to="/about">
             <li className="text-white hover:text-gray-300 cursor-pointer">
               Sobre Nosotros
             </li>
           </Link>
-          <Link to="/home">
+          <Link to="/contact">
             <li className="text-white hover:text-gray-300 cursor-pointer">
               Contacto
             </li>

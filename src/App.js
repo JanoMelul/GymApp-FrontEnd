@@ -6,14 +6,14 @@ import {
 
 import "./App.css";
 
-import Footer from "./components/footer/Footer";
-import Header from "./components/header/Header";
 import Login from "./pages/Login";
 import Home from "./pages/Home";
 import PageNotFound from "./pages/PageNotFound";
 import Protected from "./security/Protected/Protected";
 import Profile from "./pages/Profile";
 import Register from "./pages/Register";
+import AboutUs from "./pages/AboutUs";
+import ContactUs from "./pages/ContactUs";
 
 function App() {
   const router = createBrowserRouter([
@@ -42,7 +42,22 @@ function App() {
         </Protected>
       ),
     },
-    
+    {
+      path: "/about",
+      element: (
+        <Protected>
+          <AboutUs />
+        </Protected>
+      ),
+    },
+    {
+      path: "/contact",
+      element: (
+        <Protected>
+          <ContactUs />
+        </Protected>
+      ),
+    },
     {
       path: "*",
       element: <PageNotFound />,
@@ -52,7 +67,6 @@ function App() {
   return (
     <div>
       <RouterProvider router={router} />
-      
     </div>
   );
 }
