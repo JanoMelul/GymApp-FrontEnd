@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import UserModal from "../components/modalProfile/UserModal";
+import UserModal from "../../components/modalProfile/UserModal";
 
 const Profile = () => {
   const [modal, setModal] = useState(false);

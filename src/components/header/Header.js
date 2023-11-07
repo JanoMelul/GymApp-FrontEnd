@@ -14,11 +14,7 @@ const Header = () => {
               Clases
             </li>
           </Link>
-          <Link to="/home">
-            <li className="text-white hover:text-gray-300 cursor-pointer">
-              Profesores
-            </li>
-          </Link>
+
           <Link to="/about">
             <li className="text-white hover:text-gray-300 cursor-pointer">
               Sobre Nosotros
@@ -28,7 +24,7 @@ const Header = () => {
             <li className="text-white hover:text-gray-300 cursor-pointer">
               Contacto
             </li>
-          </Link> 
+          </Link>
         </ul>
         <div>
           <p className="text-white cursor-pointer">Cerrar Sesión</p>

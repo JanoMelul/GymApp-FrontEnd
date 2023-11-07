@@ -7,18 +7,23 @@ import {
 import "./App.css";
 
 import Login from "./pages/Login";
-import Home from "./pages/Home";
+import Home from "./pages/client/Home";
 import PageNotFound from "./pages/PageNotFound";
 import Protected from "./security/Protected/Protected";
-import Profile from "./pages/Profile";
+import Profile from "./pages/client/Profile";
 import Register from "./pages/Register";
-import AboutUs from "./pages/AboutUs";
-import ContactUs from "./pages/ContactUs";
-import Clases from "./pages/Clases";
+import AboutUs from "./pages/client/AboutUs";
+import ContactUs from "./pages/client/ContactUs";
+import Clases from "./pages/client/Clases"
+import SysClient from "./pages/sys/SysClient";
 
 function App() {
   const router = createBrowserRouter([
     { path: "/", element: <Navigate to="/login" /> },
+    {
+      path: "/sysClient",
+      element: <SysClient />,
+    },
     {
       path: "/login",
       element: <Login />,
