@@ -4,10 +4,10 @@ import SectionHeader from "../components/sectionHeader/SectionHeader";
 
 const AboutUs = () => {
   return (
-    <div className="bg-gray-100 py-12">
+    <div className="bg-gray-100 py-12 h-100">
       <div className="container mx-auto">
         <SectionHeader title="Sobre Nosotros" subtitle="Conócenos mejor" />
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="mx-auto text-center max-w-lg">
           <Feature
             title="Nuestra Misión"
             description="En el Gimnasio Moderno, nuestra misión es ayudarte a alcanzar tus objetivos de bienestar y a mantener un estilo de vida activo y saludable."

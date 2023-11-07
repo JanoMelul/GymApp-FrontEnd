@@ -14,6 +14,7 @@ import Profile from "./pages/Profile";
 import Register from "./pages/Register";
 import AboutUs from "./pages/AboutUs";
 import ContactUs from "./pages/ContactUs";
+import Clases from "./pages/Clases";
 
 function App() {
   const router = createBrowserRouter([
@@ -59,13 +60,21 @@ function App() {
       ),
     },
     {
+      path: "/clases",
+      element: (
+        <Protected>
+          <Clases />
+        </Protected>
+      ),
+    },
+    {
       path: "*",
       element: <PageNotFound />,
     },
   ]);
 
   return (
-    <div>
+    <div className=" h-100">
       <RouterProvider router={router} />
     </div>
   );

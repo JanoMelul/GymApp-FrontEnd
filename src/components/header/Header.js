@@ -9,7 +9,7 @@ const Header = () => {
           <h1 className="text-2xl text-white font-bold">GYM APP</h1>
         </Link>
         <ul className="flex space-x-4">
-          <Link to="/home">
+          <Link to="/clases">
             <li className="text-white hover:text-gray-300 cursor-pointer">
               Clases
             </li>
@@ -31,7 +31,7 @@ const Header = () => {
           </Link> 
         </ul>
         <div>
-          <p className="text-white">Login/log out</p>
+          <p className="text-white cursor-pointer">Cerrar Sesión</p>
         </div>
       </div>
     </nav>
